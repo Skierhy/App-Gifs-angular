@@ -1,0 +1,16 @@
+<!-- sidebar -->
+<div class="bg-dark border-right p-3" id="sidebar">
+  <h3 class="text-light">Gifs App by Skierhy</h3>
+
+  <div class="list-group list-reset">
+    <hr class="text-white" />
+    <a
+      *ngFor="let item of historial"
+      href="#"
+      class="list-group-item list-group-item-action"
+      >{{ item | titlecase }}</a
+    >
+    <!-- titlecase para capitalizar es un pipes solamente es visual no modifica la data -->
+  </div>
+</div>
+<!-- fin sidebar -->

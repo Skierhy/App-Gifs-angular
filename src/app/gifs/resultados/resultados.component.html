@@ -2,16 +2,55 @@
   <li *ngFor="let item of resultados">{{ item.title }}</li>
 </ul> -->
 
-<div class="row">
+<!-- navbar mobile -->
+<nav
+  class="navbar navbar-dark bg-dark fixed-top mb-3 d-block d-sm-block d-md-none"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Gifs App by Skierhy</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasDarkNavbar"
+      aria-controls="offcanvasDarkNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="offcanvas offcanvas-end text-bg-dark"
+      tabindex="-1"
+      id="offcanvasDarkNavbar"
+      aria-labelledby="offcanvasDarkNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+          Gifs App by Skierhy
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- contenido -->
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- fin navbar -->
+<div class="row scroll m-2 p-2 resultados-style">
   <div
     *ngFor="let item of resultados"
-    class="col-md-4 col-sm-6 animate__animated animate__fadeIn"
+    class="col-md-4 col-sm-6 animate__animated animate__fadeIn mt-2 mb-2"
   >
-    <div class="card">
+    <div class="card card-style p-3">
       <img
         [src]="item.images.downsized_medium.url"
         alt="item.title"
-        class="card-img-top"
+        class="card-img-top imagenes-style"
       />
       <div class="card-body">
         <p class="card-text">

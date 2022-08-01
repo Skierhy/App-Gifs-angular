@@ -6,7 +6,7 @@ import { ResultadosComponent } from './resultados/resultados.component';
 
 @NgModule({
   declarations: [GifsPageComponent, BusquedaComponent, ResultadosComponent],
-  exports: [GifsPageComponent],
+  exports: [GifsPageComponent, BusquedaComponent, ResultadosComponent],
   imports: [CommonModule],
 })
 export class GifsModule {}

@@ -6,6 +6,14 @@ Proyecto de gif's en Angular
 
 <https://app-gifs-angular-skierhy.netlify.app/>
 
+## Instrucciones para el proyecto
+
+Hacer el build del proyecto
+`npm run build`
+
+Correr el proyecto
+`npm run start`
+
 ## Tecnologías utilizadas en este proyecto
 
 - Angular
